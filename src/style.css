@@ -1,31 +1,15 @@
 :root {
-  /* (sub-heading at the top of the app UI) */
   --paleViolet: hsl(276, 100%, 81%);
-  /* (chat on the left) */
   --moderateViolet: hsl(276, 55%, 52%);
-  /* (chat on the right) */
   --desaturedDarkViolet: hsl(271, 15%, 43%);
-  /* (placeholder text) */
   --greyishBlue: hsl(206, 6%, 79%);
-  /* (main heading) */
   --veryDarkDesaturedViolet: hsl(271, 36%, 24%);
-  /* (paragraph) */
   --darkGreyishViolet: hsl(270, 7%, 64%);
-  /* (app background) */
   --lightGreyishViolet: hsl(270, 20%, 96%);
-  /* (submit button background) */
   --veryDarkViolet: hsl(271, 36%, 24%);
-  /* (radio button outline) */
   --veryLightMagente: hsl(289, 100%, 72%);
   --white: hsl(0, 0%, 100%);
 }
-
-/* Gradients */
-/* - Light Magenta: hsl(293, 100%, 63%)
-- Light Violet: hsl(264, 100%, 61%) */
-
-/* - Mobile: 375px
-- Desktop: 1440px */
 
 * {
   box-sizing: border-box;
@@ -75,9 +59,6 @@ body {
   width: 510px;
   height: 750px;
   z-index: -1;
-}
-
-.mobile {
 }
 
 /* Mobile Structure */
@@ -395,9 +376,20 @@ input[type="text"]::placeholder {
   color: var(--moderateViolet);
 }
 
-/* @media only screen (min-width: 1440px) {
-} */
+/* Bigger Desktop Screen (+/- max:1800px) */
+@media only screen and (min-width: 1440px) {
+  .container::before {
+    width: 600px;
+    height: 850px;
+  }
 
+  .container::after {
+    width: 610px;
+    height: 850px;
+  }
+}
+
+/* Mobile CSS */
 @media only screen and (max-width: 500px) {
   body {
     display: grid;

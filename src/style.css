@@ -1,0 +1,136 @@
+:root {
+  /* (sub-heading at the top of the app UI) */
+  --paleViolet: hsl(276, 100%, 81%);
+  /* (chat on the left) */
+  --moderateViolet: hsl(276, 55%, 52%);
+  /* (chat on the right) */
+  --desaturedDarkViolet: hsl(271, 15%, 43%);
+  /* (placeholder text) */
+  --greyishBlue: hsl(206, 6%, 79%);
+  /* (main heading) */
+  --veryDarkDesaturedViolet: hsl(271, 36%, 24%);
+  /* (paragraph) */
+  --darkGreyishViolet: hsl(270, 7%, 64%);
+  /* (app background) */
+  --lightGreyishViolet: hsl(270, 20%, 96%);
+  /* (submit button background) */
+  --veryDarkViolet: hsl(271, 36%, 24%);
+  /* (radio button outline) */
+  --veryLightMagente: hsl(289, 100%, 72%);
+  --white: hsl(0, 0%, 100%);
+}
+
+/* Gradients */
+/* - Light Magenta: hsl(293, 100%, 63%)
+- Light Violet: hsl(264, 100%, 61%) */
+
+/* - Mobile: 375px
+- Desktop: 1440px */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: var(--lightGreyishViolet);
+  display: grid;
+  align-content: center;
+  justify-items: center;
+  font-family: "Rubik", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  padding: 0 12rem;
+  height: 100vh;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  justify-items: center;
+}
+
+/* Mobile Structure */
+.mobile-device {
+  display: flex;
+  flex-direction: column;
+  background: var(--white);
+  border-radius: 1.5rem;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+  padding: 0.75rem;
+  width: 245px;
+  height: 500px;
+}
+
+.mobile-top-detail {
+  align-self: center;
+  background: var(--white);
+  border-radius: 0 0 1rem 1rem;
+  position: absolute;
+  width: 130px;
+  height: 20px;
+}
+
+/* Top Section */
+.avatar-section {
+  background: linear-gradient(
+    to right,
+    hsl(264, 100%, 61%),
+    hsl(293, 100%, 63%)
+  );
+  border-radius: 1rem 1rem 0.5rem 0.5rem;
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1);
+  display: flex;
+  padding: 2rem 0.75rem 0.75rem;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.avatar-section i {
+  color: var(--white);
+  font-size: 10px;
+}
+
+.avatar-section img {
+  border: 1px solid var(--white);
+  border-radius: 50%;
+  width: 25px;
+}
+
+.avatar-name {
+  padding-right: 4rem;
+}
+
+.avatar-name .name {
+  color: var(--white);
+  font-size: 12px;
+  padding-bottom: 2.5px;
+}
+
+.avatar-name .status {
+  color: var(--paleViolet);
+  font-size: 8px;
+}
+/* Chat Section */
+
+.message3 img {
+  width: 40px;
+}
+
+/* Attribution */
+.attribution {
+  color: black;
+  font-size: 11px;
+}
+
+.attribution a {
+  color: black;
+  text-decoration: none;
+}
+
+.attribution a:hover {
+  cursor: pointer;
+  color: grey;
+}

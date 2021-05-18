@@ -259,6 +259,106 @@ input[type="text"]::placeholder {
   left: 188px;
 }
 
+/* Chat Animations */
+@keyframes popIn {
+  from,
+  20%,
+  40%,
+  60%,
+  80%,
+  to {
+    animation-timing-function: cubic-bezier(0.2, 0.6, 0.3, 1);
+  }
+  0% {
+    opacity: 0;
+    transform: scale3d(0.25, 0.25, 0.25);
+  }
+  20% {
+    transform: scale3d(1.05, 1.05, 1.05);
+  }
+  40% {
+    transform: scale3d(0.9, 0.9, 0.9);
+  }
+  60% {
+    transform: scale3d(1.02, 1.02, 1.02);
+  }
+  80% {
+    transform: scale3d(0.95, 0.95, 0.95);
+  }
+  to {
+    opacity: 1;
+    transform: scale3d(1, 1, 1);
+  }
+}
+
+@keyframes popSlideLeft {
+  from,
+  60%,
+  75%,
+  90%,
+  to {
+    animation-timing-function: cubic-bezier(0.2, 0.6, 0.3, 1);
+  }
+  0% {
+    opacity: 0;
+    transform: translate3d(-20px, 0, 0);
+  }
+  60% {
+    opacity: 0;
+    transform: translate3d(-20px, 0, 0);
+  }
+  75% {
+    opacity: 1;
+    transform: translate3d(10px, 0, 0);
+  }
+  90% {
+    opacity: 1;
+    transform: translate3d(-5px, 0, 0);
+  }
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.pop1 {
+  animation: popIn 1s;
+}
+
+.pop2 {
+  opacity: 0;
+  animation: popIn 1s 1.5s forwards;
+}
+
+.pop3 {
+  opacity: 0;
+  animation: popIn 1s 4.5s forwards;
+}
+
+.pop4 {
+  opacity: 0;
+  animation: popIn 1s 6s forwards;
+}
+
+.pop5 {
+  opacity: 0;
+  animation: popIn 1s 7.5s forwards;
+}
+
+.pop6 {
+  opacity: 0;
+  animation: popIn 1s 10s forwards;
+}
+
+.pop7 {
+  opacity: 0;
+  animation: popSlideLeft 2s 10.5s forwards;
+}
+
+.pop8 {
+  opacity: 0;
+  animation: popSlideLeft 2s 11.5s forwards;
+}
 /* Info Section */
 .heading {
   color: var(--veryDarkDesaturedViolet);
@@ -276,7 +376,7 @@ input[type="text"]::placeholder {
 /* Attribution */
 .attribution {
   color: var(--darkGreyishViolet);
-  font-size: 11px;
+  font-size: 10px;
   position: absolute;
   bottom: 2rem;
   left: 50%;

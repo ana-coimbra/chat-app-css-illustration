@@ -408,7 +408,7 @@ input[type="text"]::placeholder {
 
   .container {
     grid-template-columns: repeat(1, 1fr);
-    padding-top: 18rem; /*FIX THIS SITUATION*/
+    padding-top: 8rem; /*FIX THIS SITUATION*/
     gap: 4rem;
   }
 

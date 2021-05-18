@@ -377,7 +377,7 @@ input[type="text"]::placeholder {
 }
 
 /* Bigger Desktop Screen (+/- max:1800px) */
-@media only screen and (min-width: 1440px) {
+@media only screen and (min-width: 1441px) {
   .container::before {
     width: 600px;
     height: 850px;

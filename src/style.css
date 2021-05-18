@@ -34,7 +34,7 @@
 }
 
 body {
-  background: var(--lightGreyishViolet);
+  background: #fafafa;
   display: grid;
   align-content: center;
   justify-items: center;
@@ -60,20 +60,20 @@ body {
   position: absolute;
   top: 0;
   left: -5rem;
-  width: 510px;
-  height: 710px;
+  width: 500px;
+  height: 750px;
   z-index: -1;
 }
 
 .container::after {
-  background: hsl(270, 58%, 95%);
+  background: #f7f5f9;
   border-radius: 20rem 20rem 0 0;
   content: "";
   position: absolute;
   bottom: 0;
   right: -10rem;
   width: 510px;
-  height: 700px;
+  height: 750px;
   z-index: -1;
 }
 
@@ -84,7 +84,7 @@ body {
   border: 0.5rem solid var(--white);
   background: #f7f5f7;
   border-radius: 1.5rem;
-  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 15px 15px 30px rgb(0 0 0 / 8%), -10px -5px 20px rgb(0 0 0 / 5%);
   width: 245px;
   height: 500px;
 }
@@ -147,7 +147,7 @@ body {
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
-  line-height: 1.5;
+  line-height: 1.4;
   padding: 0.5rem 0.5rem;
   font-size: 8px;
   height: 100%;
@@ -160,12 +160,12 @@ body {
   background: #ede6f1;
   border-radius: 0.75rem 0.75rem 0.75rem 0.25rem;
   color: var(--moderateViolet);
-  padding: 0.5rem 0.5rem 0.4rem;
+  padding: 0.45rem 0.55rem;
   width: 130px;
 }
 
 .message6 {
-  margin-top: 0.5rem;
+  margin-top: 0.3rem;
   padding-right: 0.8rem;
   height: 50px;
 }
@@ -179,7 +179,31 @@ body {
   );
   border-radius: 0.75rem 0.75rem 0.75rem 0.25rem;
   color: var(--white);
-  padding: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.45rem 1rem 0.45rem 0.55rem;
+  width: 160px;
+}
+
+.message7 .time,
+.message8 .time {
+  color: #ede6f1;
+  display: flex;
+  align-items: center;
+}
+
+.message7 .time i,
+.message8 .time i {
+  color: #ede6f1;
+  font-size: 12px;
+  margin-right: 0.5rem;
+}
+
+.message7 .price,
+.message8 .price {
+  font-size: 12px;
+  font-weight: 500;
 }
 
 /* Right Side */
@@ -190,12 +214,12 @@ body {
 }
 
 .message3 {
-  margin-top: 0.5rem;
+  margin-top: 0.3rem;
 }
 
 .message3 img {
   border-radius: 0.5rem;
-  margin-left: 5px;
+  margin-left: 8px;
   width: 40px;
 }
 
@@ -204,28 +228,69 @@ body {
   background: var(--white);
   color: var(--desaturedDarkViolet);
   border-radius: 0.75rem 0.75rem 0.25rem 0.75rem;
-  padding: 0.5rem 0.5rem 0.4rem;
+  padding: 0.45rem 0.55rem;
 }
 
 .message4 {
   width: 130px;
 }
 
+/* Type Message Section */
+input[type="text"] {
+  background: var(--white);
+  border: none;
+  border-radius: 2rem;
+  font-size: 8px;
+  padding: 12px 0;
+  width: 212px;
+  text-indent: 1rem;
+  margin-top: 0.3rem;
+}
+
+input[type="text"]::placeholder {
+  color: hsl(270, 7%, 75%);
+}
+
+.message i {
+  font-size: 20px;
+  color: var(--veryDarkViolet);
+  position: relative;
+  bottom: 1.6rem;
+  left: 188px;
+}
+
+/* Info Section */
+.heading {
+  color: var(--veryDarkDesaturedViolet);
+  font-size: 40px;
+  font-weight: 500;
+  margin-bottom: 2rem;
+}
+
+.info-text {
+  color: var(--darkGreyishViolet);
+  line-height: 1.8;
+  padding-right: 1rem;
+}
+
 /* Attribution */
 .attribution {
-  margin: 2rem 0;
-  color: black;
+  color: var(--darkGreyishViolet);
   font-size: 11px;
+  position: absolute;
+  bottom: 2rem;
+  left: 50%;
+  transform: translate(-50%);
 }
 
 .attribution a {
-  color: black;
+  color: var(--darkGreyishViolet);
   text-decoration: none;
 }
 
 .attribution a:hover {
   cursor: pointer;
-  color: grey;
+  color: var(--moderateViolet);
 }
 
 /* @media only screen (min-width: 1440px) {

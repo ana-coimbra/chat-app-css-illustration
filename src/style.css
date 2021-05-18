@@ -107,7 +107,7 @@ body {
     hsl(293, 100%, 63%)
   );
   border-radius: 1rem 1rem 0.5rem 0.5rem;
-  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.15);
   display: flex;
   padding: 2rem 0.75rem 0.75rem;
   align-items: center;
@@ -395,3 +395,60 @@ input[type="text"]::placeholder {
 
 /* @media only screen (min-width: 1440px) {
 } */
+
+@media only screen and (max-width: 500px) {
+  body {
+    display: grid;
+    align-content: center;
+    justify-items: center;
+    font-size: 14px;
+    padding: 0 1rem;
+    height: 100vh;
+  }
+
+  .container {
+    grid-template-columns: repeat(1, 1fr);
+    padding-top: 18rem; /*FIX THIS SITUATION*/
+    gap: 4rem;
+  }
+
+  /* Background "Images" */
+  .container::before {
+    top: -15rem;
+    left: -20rem;
+    width: 500px;
+    height: 740px;
+    z-index: -1;
+  }
+
+  .container::after {
+    width: 0;
+    height: 0;
+  }
+
+  /* Info Section */
+  .info {
+    text-align: center;
+  }
+
+  .heading {
+    font-size: 35px;
+    margin-bottom: 1.5rem;
+  }
+
+  .info-text {
+    padding-right: 2.25rem;
+    padding-left: 2.25rem;
+  }
+
+  /* Attribution */
+  .attribution {
+    color: var(--darkGreyishViolet);
+    position: relative;
+    top: 4rem;
+    bottom: 0;
+    left: 0;
+    padding-bottom: 2rem;
+    transform: translate(0);
+  }
+}

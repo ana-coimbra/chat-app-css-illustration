@@ -77,11 +77,14 @@ body {
   z-index: -1;
 }
 
+.mobile {
+}
+
 /* Mobile Structure */
 .mobile-device {
   display: flex;
   flex-direction: column;
-  border: 0.5rem solid var(--white);
+  border: 0.5rem solid #fff;
   background: #f7f5f7;
   border-radius: 1.5rem;
   box-shadow: 15px 15px 30px rgb(0 0 0 / 8%), -10px -5px 20px rgb(0 0 0 / 5%);
@@ -107,7 +110,6 @@ body {
     hsl(293, 100%, 63%)
   );
   border-radius: 1rem 1rem 0.5rem 0.5rem;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.15);
   display: flex;
   padding: 2rem 0.75rem 0.75rem;
   align-items: center;
@@ -408,7 +410,7 @@ input[type="text"]::placeholder {
 
   .container {
     grid-template-columns: repeat(1, 1fr);
-    padding-top: 18rem; /*FIX THIS SITUATION*/
+    padding-top: 20rem;
     gap: 4rem;
   }
 
